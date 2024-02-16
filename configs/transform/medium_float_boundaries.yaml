@@ -1,0 +1,5 @@
+train:
+  _target_: segment_vasculature.helpers.augs_helpers.rsna_2023_float_boundaries
+
+val:
+  _target_: segment_vasculature.helpers.augs_helpers.to_tensor

@@ -1,0 +1,10 @@
+kaggle_root: data/kaggle/train
+external_root: data/external
+output_dir: data/preprocessed_train
+
+hydra:
+  run:
+    dir: '.'
+  sweep:
+    dir: '.'
+    subdir: '.'

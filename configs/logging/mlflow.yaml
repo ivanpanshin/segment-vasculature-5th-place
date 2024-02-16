@@ -1,0 +1,7 @@
+experiment_name: segment_vasculature
+run_name: _
+tracking_url: http://localhost:7051
+logging_dir: logs
+iters: 50
+save_all_epochs: true
+track_train_metrics: false

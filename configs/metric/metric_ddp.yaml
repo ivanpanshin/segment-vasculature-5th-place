@@ -1,0 +1,4 @@
+_target_: segment_vasculature.metrics.pipeline_metrics_ddp.Metrics
+main_metric: val_kidney3/surface_dice_at_mean
+main_metric_direction: maximize
+track_val_loss: false

@@ -1,0 +1,5 @@
+_target_: segmentation_models_pytorch.Unet
+encoder_name: tu-maxvit_base_tf_512.in21k_ft_in1k
+decoder_use_batchnorm: False
+in_channels: 1
+classes: 1

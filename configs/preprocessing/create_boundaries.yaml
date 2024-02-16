@@ -1,0 +1,18 @@
+label_paths:
+  - data/preprocessed_train/kidney_1_dense/full_label.tif
+  - data/annotations/kidney_2.tif
+  - data/annotations/kidney_external.tif
+  - data/annotations/spleen_external.tif
+
+boundaries_paths:
+  - data/boundaries/kidney_1_dense.tif
+  - data/boundaries/kidney_2.tif
+  - data/boundaries/kidney_external.tif
+  - data/boundaries/spleen_external.tif
+
+hydra:
+  run:
+    dir: '.'
+  sweep:
+    dir: '.'
+    subdir: '.'

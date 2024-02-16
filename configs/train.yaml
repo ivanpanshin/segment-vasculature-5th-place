@@ -1,0 +1,17 @@
+defaults:
+  - _self_
+  - trainer: train
+  - model:
+  - loss:
+  - metric: metric_ddp
+  - optimizer: adamw
+  - scheduler: cosine_annealing
+  - accelerate: gpu_amp
+  - dataset:
+  - loader: b16_w8
+  - logging: mlflow
+  - collate_fn:
+  - sampler: distributed
+  - transform:
+  - callbacks: train
+  - hydra: default

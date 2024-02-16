@@ -1,0 +1,6 @@
+val_kidney3:
+  _target_: segment_vasculature.helpers.dataset_helpers.Dataset2DMultiPlanes
+  dataset_root: data/preprocessed_train/kidney_3_dense
+  crop_size: 512
+  overlap_size: 256
+  split: val

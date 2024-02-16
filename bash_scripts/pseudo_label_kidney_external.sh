@@ -1,0 +1,1 @@
+torchrun --nproc_per_node=1 segment_vasculature/test.py model=unet_2d_effnet_m_upscale dataset=[test/kidney_external] transform=medium trainer.trainer_hyps.test_preds_output_path=data/annotations/kidney_external.tif loader=b16_w8

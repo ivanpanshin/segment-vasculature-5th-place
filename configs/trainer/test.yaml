@@ -1,0 +1,7 @@
+trainer:
+  _target_: segment_vasculature.trainer.trainer.Trainer
+  _recursive_: false
+
+trainer_hyps:
+  ddp_validation: true
+  test_preds_output_path:

@@ -1,0 +1,4 @@
+- _target_: segment_vasculature.callbacks.model.ChangeModelDevice
+- _target_: segment_vasculature.callbacks.model.TrainEval
+- _target_: segment_vasculature.callbacks.model.LoadModelFromDisk
+  path: weights/effnet_m_up2_swa_finetuned.pt

@@ -1,4 +1,4 @@
-# segment-vasculature 5th place solution
+# Segment Vasculature 5th place solution
 
 1. Install packages
 ```
@@ -11,7 +11,7 @@ pip install -r requirements.txt
 
 3. Download external [kidney data](https://human-organ-atlas.esrf.eu/datasets/572253707) + [spleen data](https://human-organ-atlas.esrf.eu/datasets/572244401) in 50um resolution, and place them into `data/external`
 
-4. Preprocess Kaggle + external data. 
+4. Preprocess Kaggle + external data.
 ```
 python segment_vasculature/preprocessing/create_3d_tensors.py
 ```
@@ -33,7 +33,7 @@ export N_GPUS=1
 
 8. Train effnet_v2_m model for kidney1
 ```
-bash bash_scripts/train_effnet_v2_m_kidney1.sh 
+bash bash_scripts/train_effnet_v2_m_kidney1.sh
 ```
 9. Calculate pseudo labels for kidney_2
 ```
@@ -43,7 +43,7 @@ Note: don't forget to insert correct path to weights in `configs/callbacks/test.
 
 10. Train effnet_v2_m model for kidney1 + kidney2
 ```
-bash bash_scripts/train_effnet_v2_m_kidney1_2.sh 
+bash bash_scripts/train_effnet_v2_m_kidney1_2.sh
 ```
 11. Calculate pseudo labels for kidney_external
 ```
@@ -53,7 +53,7 @@ Note: don't forget to insert correct path to weights in `configs/callbacks/test.
 
 12. Train effnet_v2_m model for kidney1 + kidney2 + kidney_external
 ```
-bash bash_scripts/train_effnet_v2_m_kidney1_2_external.sh 
+bash bash_scripts/train_effnet_v2_m_kidney1_2_external.sh
 ```
 13. Calculate pseudo labels for spleen_external
 ```
@@ -68,7 +68,7 @@ python segment_vasculature/preprocessing/create_boundaries.py
 
 15. Train effnet_v2_m model for kidney1 + kidney2 + kidney_external + spleen_external
 ```
-bash bash_scripts/train_effnet_v2_m_kidney1_2_external_spleen.sh 
+bash bash_scripts/train_effnet_v2_m_kidney1_2_external_spleen.sh
 ```
 16. Train dpn model for kidney1 + kidney2 + kidney_external + spleen_external
 ```

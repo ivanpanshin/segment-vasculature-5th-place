@@ -1,0 +1,8 @@
+trainer:
+  _target_: segment_vasculature.trainer.trainer_boundaries.Trainer
+  _recursive_: false
+
+trainer_hyps:
+  ddp_validation: true
+  num_epochs: 10
+  debug_iters:

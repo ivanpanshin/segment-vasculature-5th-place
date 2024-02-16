@@ -1,0 +1,16 @@
+train:
+  _target_: segment_vasculature.helpers.dataset_helpers.Dataset2DMultiPlanesSeveralKidneys
+
+  dataset_roots:
+    - data/preprocessed_train/kidney_1_dense
+    - data/preprocessed_train/kidney_2_sparse
+    - data/preprocessed_train/kidney_external
+
+  pseudo_annotations_paths:
+    -
+    - data/annotations/kidney_2.tif
+    - data/annotations/kidney_external.tif
+
+  crop_size: 512
+  overlap_size: 256
+  split: train

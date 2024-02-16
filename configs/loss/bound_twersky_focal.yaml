@@ -1,0 +1,7 @@
+_target_: segment_vasculature.helpers.optim_helpers.BoundTwerskyFocalLoss
+bound_alpha: 1
+bound_weight: 0.9
+twersky_weight: 0.01
+twersky_alpha: 0.5
+twersky_beta: 1
+focal_weight: 0.09

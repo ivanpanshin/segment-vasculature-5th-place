@@ -1,0 +1,24 @@
+train:
+  _target_: segment_vasculature.helpers.dataset_helpers.Dataset2DMultiPlanesSeveralKidneysBoundaries
+
+  dataset_roots:
+    - data/preprocessed_train/kidney_1_dense
+    - data/preprocessed_train/kidney_2_sparse
+    - data/preprocessed_train/kidney_external
+    - data/preprocessed_train/spleen_external
+
+  pseudo_annotations_paths:
+    -
+    - data/annotations/kidney_2.tif
+    - data/annotations/kidney_external.tif
+    - data/annotations/spleen_external.tif
+
+  boundaries_paths:
+    - data/boundaries/kidney_1_dense.tif
+    - data/boundaries/kidney_2.tif
+    - data/boundaries/kidney_external.tif
+    - data/boundaries/spleen_external.tif
+
+  crop_size: 512
+  overlap_size: 256
+  split: train

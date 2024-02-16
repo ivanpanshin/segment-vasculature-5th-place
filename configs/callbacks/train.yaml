@@ -1,0 +1,8 @@
+- _target_: segment_vasculature.callbacks.model.ChangeModelDevice
+- _target_: segment_vasculature.callbacks.model.TrainEval
+- _target_: segment_vasculature.callbacks.model.SaveModel
+  top_k: 5
+- _target_: segment_vasculature.callbacks.logging.CalculateETA
+- _target_: segment_vasculature.callbacks.logging.LogMetrics_Mlflow
+- _target_: segment_vasculature.callbacks.model.EMA
+  ema_decay_per_epoch: 0.3

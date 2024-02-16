@@ -1,0 +1,6 @@
+_target_: segment_vasculature.helpers.model_helpers.UnetUpscale
+encoder_name: tu-dpn68b
+decoder_use_batchnorm: False
+in_channels: 1
+classes: 1
+upscale_factor: 2

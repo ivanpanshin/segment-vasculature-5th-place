@@ -1,0 +1,14 @@
+defaults:
+  - _self_
+  - trainer: test
+  - model:
+  - loss:
+  - metric: metric_ddp
+  - accelerate: gpu_amp
+  - dataset: []
+  - loader: b2_w2
+  - collate_fn:
+  - sampler: distributed
+  - transform:
+  - callbacks: test
+  - hydra: default

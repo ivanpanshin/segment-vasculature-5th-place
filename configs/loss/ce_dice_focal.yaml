@@ -1,0 +1,4 @@
+_target_: segment_vasculature.helpers.optim_helpers.CEDiceFocalLoss
+ce_weight: 0.9
+dice_weight: 0.01
+focal_weight: 0.09
