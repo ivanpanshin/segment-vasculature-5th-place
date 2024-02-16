@@ -1,5 +1,7 @@
 # Segment Vasculature 5th place solution
 
+Gold solution for the [Hacking the Human Vasculature](https://www.kaggle.com/competitions/blood-vessel-segmentation/overview) in 3D competition.
+
 1. Install packages
 ```
 pip install --upgrade pip
