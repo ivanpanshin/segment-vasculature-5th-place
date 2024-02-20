@@ -2,6 +2,8 @@
 
 Gold solution for the [Hacking the Human Vasculature](https://www.kaggle.com/competitions/blood-vessel-segmentation/overview) in 3D competition.
 
+The trained weights could be found in `weights` dir.
+
 1. Install packages
 ```
 pip install --upgrade pip
