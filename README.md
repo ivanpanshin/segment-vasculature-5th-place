@@ -4,6 +4,9 @@ Gold solution for the [Hacking the Human Vasculature](https://www.kaggle.com/com
 
 The trained weights could be found in `weights` dir.
 
+The proposed solution could be trained in about a week on a single RTX A6000 Ada.
+
+
 1. Install packages
 ```
 pip install --upgrade pip
